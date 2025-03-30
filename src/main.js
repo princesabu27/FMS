@@ -14,7 +14,7 @@ if (login) {
   login.addEventListener("click", (e) => {
     e.preventDefault();
     if (username.value == "admin" && password.value == "Password@123") {
-      window.location.href = "src/Other/home.html";
+      window.location.href = "/FMS/src/Other/home.html";
     } else {
       alert("Invalid username or password");
     }
@@ -24,41 +24,41 @@ if (login) {
 if (home) {
   home.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.href = "src/Other/home.html";
+    window.location.href = "/FMS/src/Other/home.html";
   });
 }
 
 if (transactions) {
   transactions.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.href = "src/Other/Transaction.html";
+    window.location.href = "/FMS/src/Other/Transaction.html";
   });
 }
 
 if (budget) {
   budget.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.href = "src/Other/Budget.html";
+    window.location.href = "/FMS/src/Other/Budget.html";
   });
 }
 
 if (subscription) {
   subscription.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.href = "src/Other/Subscription.html";
+    window.location.href = "/FMS/src/Other/Subscription.html";
   });
 }
 
 if (goal) {
   goal.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.href = "src/Other/goal.html";
+    window.location.href = "/FMS/src/Other/goal.html";
   });
 }
 
 if (report) {
   report.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.href = "/src/Other/report.html";
+    window.location.href = "/FMS/src/Other/report.html";
   });
 }
