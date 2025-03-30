@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  base: "FMS",
+  base: '/FMS/',
   plugins: [tailwindcss()],
   server: {
     host: "0.0.0.0",
