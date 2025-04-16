@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link
@@ -15,13 +15,15 @@
     />
   </head>
   <body class="">
-    <main class="h-full">
-      <!-- Navigation -->
-      <header class="lg:hidden  w-full flex justify-around items-center h-15">
+    <main class="max-w-dvw">
+      <!-- Header only for Mobile app -->
+      <header
+        class="lg:hidden w-full flex justify-around items-center h-15 border"
+      >
         <div class="flex w-11/12 h-10 justify-between">
           <div class="">
             <h1 class="text-lime-400 font-bold text-3xl align-middle font-mono">
-              FMS
+              Compass
             </h1>
           </div>
           <div class="h-full">
@@ -33,47 +35,68 @@
           </div>
         </div>
       </header>
+      <div class="border overflow-hidden xl:ml-40 lg:ml-15 h-full">
+        <div class="border border-blue-500 m-5">
+          <div>Budget Content</div>
+        </div>
+      </div>
+
+      <!-- Navigation  -->
       <nav
-        class="bg-neutral-900 w-full h-15 absolute flex bottom-0 justify-around lg:justify-start lg:w-15 xl:w-40 lg:h-full lg:flex-col"
+        class="bg-neutral-900 w-full h-15 fixed flex bottom-0 justify-around lg:justify-between lg:w-15 xl:w-40 lg:h-full lg:flex-col"
       >
-        <div
-          class="flex items-center p-4 cursor-pointer hover:scale-105"
-          id="homePage"
-        >
-          <i class="bi bi-house-door text-3xl lg:text-xl"></i>
-          <h5 class="hidden xl:block ml-2">Home</h5>
+        <div class="flex w-full justify-around lg:flex-col">
+          <div
+            class="flex items-center p-4 cursor-pointer hover:scale-105"
+            id="homePage"
+          >
+            <i class="bi bi-house-door text-3xl lg:text-xl"></i>
+            <h5 class="hidden xl:block ml-2">Home</h5>
+          </div>
+          <div
+            class="flex items-center p-4 cursor-pointer hover:scale-105"
+            id="transactionsPage"
+          >
+            <i class="bi bi-cash-stack text-3xl lg:text-xl"></i>
+            <h5 class="hidden xl:block ml-2">Transactions</h5>
+          </div>
+          <div class="flex items-center p-4 cursor-default" id="budgetPage">
+            <i class="bi bi-wallet2 text-3xl lg:text-xl text-lime-400"></i>
+            <h5 class="hidden xl:block ml-2 text-lime-400">Budget</h5>
+          </div>
+          <div
+            class="flex items-center p-4 cursor-pointer hover:scale-105"
+            id="subscriptionPage"
+          >
+            <i class="bi bi-calendar-check text-3xl lg:text-xl"></i>
+            <h5 class="hidden xl:block ml-2">Subscription</h5>
+          </div>
+          <div
+            class="flex items-center p-4 cursor-pointer hover:scale-105"
+            id="goalPage"
+          >
+            <i class="bi bi-bullseye text-3xl lg:text-xl"></i>
+            <h5 class="hidden xl:block ml-2">Goal</h5>
+          </div>
+          <div
+            class="flex items-center p-4 cursor-pointer hover:transform hover:scale-105"
+            id="reportPage"
+          >
+            <i class="bi bi-graph-up text-3xl lg:text-xl"></i>
+            <h5 class="hidden xl:block ml-2">Reports</h5>
+          </div>
         </div>
-        <div
-          class="flex items-center p-4 cursor-pointer hover:scale-105"
-          id="transactionsPage"
-        >
-          <i class="bi bi-cash-stack text-3xl lg:text-xl"></i>
-          <h5 class="hidden xl:block ml-2">Transactions</h5>
-        </div>
-        <div class="flex items-center p-4 cursor-default" id="budgetPage">
-          <i class="bi bi-wallet2 text-3xl lg:text-xl text-lime-400"></i>
-          <h5 class="hidden xl:block ml-2 text-lime-400">Budget</h5>
-        </div>
-        <div
-          class="flex items-center p-4 cursor-pointer hover:scale-105"
-          id="subscriptionPage"
-        >
-          <i class="bi bi-calendar-check text-3xl lg:text-xl"></i>
-          <h5 class="hidden xl:block ml-2">Subscription</h5>
-        </div>
-        <div
-          class="flex items-center p-4 cursor-pointer hover:scale-105"
-          id="goalPage"
-        >
-          <i class="bi bi-bullseye text-3xl lg:text-xl"></i>
-          <h5 class="hidden xl:block ml-2">Goal</h5>
-        </div>
-        <div
-          class="flex items-center p-4 cursor-pointer hover:transform hover:scale-105"
-          id="reportPage"
-        >
-          <i class="bi bi-graph-up text-3xl lg:text-xl"></i>
-          <h5 class="hidden xl:block ml-2">Reports</h5>
+        <div class="w-full hidden xl:block lg:block">
+          <div class="flex items-center p-4 cursor-pointer">
+            <img
+              class="w-8 rounded-full object-cover"
+              src="https://www.strasys.uk/wp-content/uploads/2022/02/Depositphotos_484354208_S.jpg"
+              alt=""
+            />
+            <h5 class="hidden xl:block ml-2 hover:transform hover:scale-105">
+              Admin
+            </h5>
+          </div>
         </div>
       </nav>
     </main>

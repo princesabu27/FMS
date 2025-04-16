@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link
@@ -9,71 +9,306 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finance Management App | Home</title>
+    <meta
+      name="COMPASS"
+      content="Comprehensive Organizer & Manager for Personal Accounting, Savings, and Spending"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
   </head>
   <body class="">
-    <main class="w-dvw">
-      <!-- Navigation -->
-      <header class="lg:hidden  w-full flex justify-around items-center h-15">
+    <main class="max-w-dvw">
+      <!-- Header only for Mobile app -->
+      <header
+        class="lg:hidden w-full flex justify-around items-center h-15 shadow-lg shadow-neutral-600/20"
+      >
         <div class="flex w-11/12 h-10 justify-between">
           <div class="">
-            <h1 class="text-lime-400 font-bold text-3xl align-middle font-mono">
-              FMS
+            <h1
+              class="text-lime-400 font-bold text-3xl align-middle font-mono pointer-events-none select-none cursor-not-allowed"
+            >
+              Compass
             </h1>
           </div>
           <div class="h-full">
             <img
               class="h-full rounded-full object-cover"
               src="https://www.strasys.uk/wp-content/uploads/2022/02/Depositphotos_484354208_S.jpg"
-              alt=""
+              alt="Profile Pic"
             />
           </div>
         </div>
       </header>
+      <div class="overflow-hidden xl:ml-40 lg:ml-15 h-full m-auto border">
+        <!-- Grids -->
+        <div class="m-4 border grid grid-cols-12 grid-rows-12 gap-5">
+          <!-- first card -->
+          <div class="border border-violet-800 col-span-12">
+            <div class="bg-neutral-50 p-3 rounded-2xl">
+              <div class="flex flex-row justify-between">
+                <div class="flex flex-col">
+                  <h5 class="text-black font-normal">Good morning! Admin</h5>
+                  <h1 class="text-black text-2xl mt-2 mb-2">
+                    <span class="font-semibold">00000000.00</span> INR
+                  </h1>
+                  <div class="flex">
+                    <div
+                      class="w-6 h-6 flex flex-col rounded-full overflow-hidden border border-neutral-300"
+                    >
+                      <div class="bg-orange-500 w-full h-full"></div>
+                      <div class="bg-white w-full h-full flex justify-center">
+                        <div
+                          class="bg-blue-400 rounded-full h-full aspect-square"
+                        ></div>
+                      </div>
+                      <div class="bg-green-700 w-full h-full"></div>
+                    </div>
+                    <div class="pl-2">
+                      <h3 class="text-black font-normal">IND Balance</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-black">
+                  <label class="inline-flex items-center mb-5 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      value=""
+                      class="sr-only peer"
+                      title="Toggle balance visibility"
+                      aria-label="Toggle balance visibility"
+                    />
+                    <div
+                      class="relative w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-1 rounded-full peer dark:bg-gray-200 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-300 peer-checked:bg-blue-600 dark:peer-checked:bg-lime-400"
+                    ></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Second Card -->
+          <div class="border border-blue-700 col-span-12">
+            <div
+              class="bg-neutral-800 border-2 border-lime-400 p-3 rounded-2xl"
+            >
+              <div class="">
+                <div>
+                  <h5 class="font-medium">Everyday needs</h5>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-4">
+                  <div
+                    class="flex flex-row items-center p-1 rounded-4xl bg-white cursor-pointer hover:ring-2 hover:ring-lime-400"
+                  >
+                    <i
+                      class="flex items-center justify-center rounded-full bg-neutral-300 ring-1 ring-neutral-400 aspect-square h-7 w-7 select-none text-sm"
+                    >
+                      &#9981;</i
+                    >
+                    <h6 class="pl-2 pr-2 text-black font-medium select-none">
+                      Petrol
+                    </h6>
+                  </div>
+                  <div
+                    class="flex flex-row items-center p-1 rounded-4xl bg-white cursor-pointer hover:ring-2 hover:ring-lime-400"
+                  >
+                    <i
+                      class="flex items-center justify-center rounded-full bg-neutral-300 ring-1 ring-neutral-400 aspect-square h-7 w-7 select-none text-sm"
+                      >&#128722;</i
+                    >
+                    <h6 class="pl-2 pr-2 text-black font-medium select-none">
+                      Grocery
+                    </h6>
+                  </div>
+
+                  <div
+                    class="flex flex-row items-center p-1 rounded-4xl bg-white cursor-pointer hover:ring-2 hover:ring-lime-400"
+                  >
+                    <i
+                      class="flex items-center justify-center rounded-full bg-neutral-300 ring-1 ring-neutral-400 aspect-square h-7 w-7 select-none text-sm"
+                    >
+                      &#127868;
+                    </i>
+                    <h6 class="pl-2 pr-2 text-black font-medium select-none">
+                      Supplements
+                    </h6>
+                  </div>
+
+                  <div
+                    class="flex flex-row items-center p-1 rounded-4xl bg-white cursor-pointer hover:ring-2 hover:ring-lime-400"
+                  >
+                    <i
+                      class="flex items-center justify-center rounded-full bg-neutral-300 ring-1 ring-neutral-400 aspect-square h-7 w-7 select-none text-sm"
+                    >
+                      &#128760;
+                    </i>
+                    <h6 class="pl-2 pr-2 text-black font-medium select-none">
+                      Vehicle Maintenance
+                    </h6>
+                  </div>
+
+                  <div
+                    class="flex flex-row items-center p-1 rounded-4xl bg-white cursor-pointer hover:ring-2 hover:ring-lime-400"
+                  >
+                    <i
+                      class="flex items-center justify-center rounded-full bg-neutral-300 ring-1 ring-neutral-400 aspect-square h-7 w-7 select-none text-sm"
+                    >
+                      &#127809;
+                    </i>
+                    <h6 class="pl-2 pr-2 text-black font-medium select-none">
+                      Others
+                    </h6>
+                  </div>
+
+                  <div
+                    class="flex flex-row items-center p-1 rounded-4xl bg-white cursor-pointer hover:ring-2 hover:ring-lime-400"
+                  >
+                    <i
+                      class="flex items-center justify-center rounded-full bg-neutral-300 ring-1 ring-neutral-400 aspect-square h-7 w-7 select-none text-sm"
+                    >
+                      &#128242;
+                    </i>
+
+                    <h6 class="pl-2 pr-2 text-black font-medium select-none">
+                      Mobile / Internet
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third Card -->
+          <div class="border border-green-700 col-span-12">
+            <div
+              class="bg-gradient-to-t from-neutral-800 to-neutral-700 p-3 rounded-2xl"
+            >
+              <div class="border border-amber-300 p-4">
+                <div class="flex flex-row justify-between items-center">
+                  <!-- Left side: Title and Subtitle -->
+                  <div class="flex flex-col">
+                    <h3 class="text-base font-semibold text-white">
+                      Spending limit
+                    </h3>
+                    <h5 class="text-sm text-gray-400">Spend / Budget</h5>
+                  </div>
+
+                  <!-- Right side: Toggle switch -->
+                  <label
+                    class="relative inline-flex items-center cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      value=""
+                      class="sr-only peer"
+                      title="Toggle balance visibility"
+                      aria-label="Toggle balance visibility"
+                    />
+                    <div
+                      class="relative w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-lime-300 rounded-full peer-checked:bg-lime-300 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:after:translate-x-4"
+                    ></div>
+                  </label>
+                </div>
+              </div>
+
+              <div class="border border-violet-700 h-10"></div>
+            </div>
+          </div>
+
+          <!-- Forth Card -->
+          <div class="border border-yellow-400 col-span-12">
+            <div>
+              <h1>Forth</h1>
+            </div>
+          </div>
+          <div class="border border-orange-400 col-span-12">
+            <div>
+              <h1>Fifth</h1>
+            </div>
+          </div>
+          <div class="border border-red-600 col-span-12">
+            <div>
+              <h1>Sixth</h1>
+            </div>
+          </div>
+          <div class="border border-indigo-700 col-span-12">
+            <div>
+              <h1>Seventh</h1>
+            </div>
+          </div>
+          <div class="border col-span-12">
+            <div>
+              <h1>Eighth</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation  -->
       <nav
-        class="bg-neutral-900 w-full h-15 absolute flex bottom-0 justify-around lg:justify-start lg:w-15 xl:w-40 lg:h-full lg:flex-col"
+        class="bg-neutral-900 w-full h-15 fixed flex bottom-0 justify-around lg:justify-between lg:w-15 xl:w-40 lg:h-full lg:flex-col"
       >
-        <div class="flex items-center p-4 cursor-default" id="homePage">
-          <i class="bi bi-house-door text-3xl lg:text-xl text-lime-400"></i>
-          <h5 class="hidden xl:block ml-2 text-lime-400">Home</h5>
+        <div class="w-100 lg:w-full flex justify-around lg:flex-col lg:mt-5">
+          <div class="m-auto hidden lg:block">
+            <h1 class="text-2xl text-lime-400 font-bold">
+              <span class="font-extrabold"> C</span
+              ><span class="hidden xl:inline">ompass</span>
+            </h1>
+          </div>
+          <span
+            class="w-full border-neutral-70000 mt-3 border hidden lg:inline"
+          ></span>
+          <div class="flex items-center p-4 cursor-default" id="homePage">
+            <i class="bi bi-house-door text-3xl lg:text-xl text-lime-400"></i>
+            <h5 class="hidden xl:block ml-2 text-lime-400">Home</h5>
+          </div>
+          <div
+            class="flex items-center p-4 cursor-pointer hover:scale-105"
+            id="transactionsPage"
+          >
+            <i class="bi bi-cash-stack text-3xl lg:text-xl"></i>
+            <h5 class="hidden xl:block ml-2">Transactions</h5>
+          </div>
+          <div
+            class="flex items-center p-4 cursor-pointer hover:scale-105"
+            id="budgetPage"
+          >
+            <i class="bi bi-wallet2 text-3xl lg:text-xl"></i>
+            <h5 class="hidden xl:block ml-2">Budget</h5>
+          </div>
+          <div
+            class="flex items-center p-4 cursor-pointer hover:scale-105"
+            id="subscriptionPage"
+          >
+            <i class="bi bi-calendar-check text-3xl lg:text-xl"></i>
+            <h5 class="hidden xl:block ml-2">Subscription</h5>
+          </div>
+          <div
+            class="flex items-center p-4 cursor-pointer hover:scale-105"
+            id="goalPage"
+          >
+            <i class="bi bi-bullseye text-3xl lg:text-xl"></i>
+            <h5 class="hidden xl:block ml-2">Goal</h5>
+          </div>
+          <div
+            class="flex items-center p-4 cursor-pointer hover:transform hover:scale-105"
+            id="reportPage"
+          >
+            <i class="bi bi-graph-up text-3xl lg:text-xl"></i>
+            <h5 class="hidden xl:block ml-2">Reports</h5>
+          </div>
         </div>
-        <div
-          class="flex items-center p-4 cursor-pointer hover:scale-105"
-          id="transactionsPage"
-        >
-          <i class="bi bi-cash-stack text-3xl lg:text-xl"></i>
-          <h5 class="hidden xl:block ml-2">Transactions</h5>
-        </div>
-        <div
-          class="flex items-center p-4 cursor-pointer hover:scale-105"
-          id="budgetPage"
-        >
-          <i class="bi bi-wallet2 text-3xl lg:text-xl"></i>
-          <h5 class="hidden xl:block ml-2">Budget</h5>
-        </div>
-        <div
-          class="flex items-center p-4 cursor-pointer hover:scale-105"
-          id="subscriptionPage"
-        >
-          <i class="bi bi-calendar-check text-3xl lg:text-xl"></i>
-          <h5 class="hidden xl:block ml-2">Subscription</h5>
-        </div>
-        <div
-          class="flex items-center p-4 cursor-pointer hover:scale-105"
-          id="goalPage"
-        >
-          <i class="bi bi-bullseye text-3xl lg:text-xl"></i>
-          <h5 class="hidden xl:block ml-2">Goal</h5>
-        </div>
-        <div
-          class="flex items-center p-4 cursor-pointer hover:transform hover:scale-105"
-          id="reportPage"
-        >
-          <i class="bi bi-graph-up text-3xl lg:text-xl"></i>
-          <h5 class="hidden xl:block ml-2">Reports</h5>
+        <div class="w-full hidden xl:block lg:block">
+          <div class="flex items-center p-4 cursor-pointer">
+            <img
+              class="w-8 rounded-full object-cover"
+              src="https://www.strasys.uk/wp-content/uploads/2022/02/Depositphotos_484354208_S.jpg"
+              alt=""
+            />
+            <h5 class="hidden xl:block ml-2 hover:transform hover:scale-105">
+              Admin
+            </h5>
+          </div>
         </div>
       </nav>
     </main>
