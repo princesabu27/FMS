@@ -1,5 +1,7 @@
 import "./style.css";
 
+
+
 const login = document.getElementById("login");
 const username = document.getElementById("username");
 const password = document.getElementById("password");
@@ -62,8 +64,3 @@ if (report) {
     window.location.href = "/FMS/src/Other/report.html";
   });
 }
-
-
-
-
-
